@@ -134,6 +134,20 @@ footer a:hover { text-decoration: underline; }
 footer .base { border-top: 1px solid rgba(255,255,255,.12); padding: 14px 0; font-size: 13px; }
 footer .base .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; }
 
+/* owner */
+.owner { display: grid; grid-template-columns: 300px 1fr; gap: 36px; align-items: center; background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 28px; box-shadow: 0 6px 24px rgba(5,42,85,.07); }
+.owner-photo { display: block; border-radius: 10px; overflow: hidden; border: 4px solid #fff; box-shadow: 0 0 0 2px var(--blue), 0 10px 26px rgba(5,42,85,.22); aspect-ratio: 18 / 25; background: var(--blue-soft); }
+.owner-photo img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.eyebrow { display: inline-block; font-size: 12.5px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em; color: var(--blue); background: var(--blue-soft); padding: 4px 10px; border-radius: 99px; }
+.owner-text h2 { font-size: 30px; line-height: 1.2; margin: 12px 0 4px; color: var(--blue-deep); letter-spacing: -0.01em; }
+.owner-text h2 .ur { display: block; font-size: 22px; font-weight: 600; color: var(--blue); margin-top: 6px; text-align: left; }
+.owner-text h1 .ur { text-align: left; }
+.owner-role { margin: 0 0 16px; font-weight: 600; color: var(--muted); }
+.owner-text p { max-width: 640px; }
+.btn.primary { background: var(--blue); color: #fff; }
+.btn.outline { border: 1.5px solid var(--blue); color: var(--blue); }
+.profile-hero { padding: 32px 0 12px; }
+
 /* legal pages */
 .doc { background: var(--card); border: 1px solid var(--line); border-radius: 8px; padding: 28px; margin: 32px 0; }
 .doc h1 { margin-top: 0; color: var(--blue-deep); }
@@ -151,6 +165,11 @@ footer .base .wrap { display: flex; flex-wrap: wrap; justify-content: space-betw
   .figures { grid-template-columns: repeat(2, 1fr); }
   footer .cols4 { grid-template-columns: 1fr; gap: 22px; }
   .cta-call { display: none; }
+  .owner { grid-template-columns: 1fr; gap: 22px; padding: 20px; text-align: center; }
+  .owner-photo { max-width: 260px; margin: 0 auto; }
+  .owner-text p { margin-inline: auto; }
+  .owner-text h2 { font-size: 25px; }
+  .owner-text h1 .ur, .owner-text h2 .ur { text-align: center; }
   .nav .wrap { padding: 0; }
   .nav ul { display: grid; grid-template-columns: repeat(3, 1fr); }
   .nav a { padding: 10px 6px; text-align: center; font-size: 14px; border-right: 1px solid rgba(255,255,255,.12); border-bottom: 1px solid rgba(255,255,255,.12); }
@@ -159,7 +178,7 @@ footer .base .wrap { display: flex; flex-wrap: wrap; justify-content: space-betw
 @media (max-width: 520px) {
   .brand img { width: 48px; height: 48px; }
   .brand-name { font-size: 20px; }
-  .brand-name .ur { display: block; margin: 2px 0 0; font-size: 17px; }
+  .brand-name .ur { display: block; margin: 2px 0 0; font-size: 17px; text-align: left; }
   .strip .wrap { justify-content: center; }
   .strip .hide-sm { display: none; }
   section { padding: 38px 0; }
